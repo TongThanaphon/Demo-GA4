@@ -2,7 +2,7 @@ import React from 'react'
 
 const Text = () => {
     return (
-        <p>Hello, My Text</p>
+        <p className='text-[#a1f542]'>Hello, My Text</p>
     )
 }
 
