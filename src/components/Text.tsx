@@ -5,9 +5,7 @@ import React from 'react'
 const Text: React.FC<MyText> = (props) => {
     const { text } = props
 
-    return (
-        <p className='text-[#a1f542]'>Hello, {text}</p>
-    )
+    return <p className='text-[#a1f542]'>Hello, {text}</p>
 }
 
 export default Text
