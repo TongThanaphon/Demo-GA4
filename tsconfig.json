@@ -20,7 +20,7 @@
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
-      "@context/*": ["contexts/*"],
+      "@contexts/*": ["contexts/*"],
       "@themes/*": ["@themes/*"]
     }
   },
