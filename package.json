@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
-    "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "lint": "eslint ./src --ext ts --ext tsx --ext js",
+    "format": "prettier --write ./src",
+    "check-format": "prettier --check ./src"
   },
   "dependencies": {
     "autoprefixer": "^10.4.12",
