@@ -1,3 +1,3 @@
 export interface MyText {
-    text: string
+  text: string
 }
