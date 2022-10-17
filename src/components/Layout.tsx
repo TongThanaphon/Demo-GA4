@@ -12,12 +12,14 @@ const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <div>
       <nav className='text-center bg-orange-600 text-bold flex justify-center space-x-4'>
-        <Link href="/">Home</Link>
-        <Link href="/magic">Magic</Link>
-        <Link href="/tong">Tong</Link>
+        <Link href='/'>Home</Link>
+        <Link href='/magic'>Magic</Link>
+        <Link href='/tong'>Tong</Link>
       </nav>
-      {children}
-      <footer className='text-center bg-emerald-300 text-bold'>Footer</footer>
+      <div className='h-screen'>{children}</div>
+      <footer className='text-center bg-emerald-300 text-bold'>
+        <Link href='https://www.shippop.com/'>SHIPPOP</Link>
+      </footer>
     </div>
   )
 }
