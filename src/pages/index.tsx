@@ -5,7 +5,6 @@ import React from 'react'
 
 import Layout from '@components/Layout'
 
-
 const HomePage: NextPageWithLayout = () => {
   return (
     <div>
@@ -13,6 +12,7 @@ const HomePage: NextPageWithLayout = () => {
         Welcome to <a href='https://nextjs.org'>Next.js!</a>
       </h1>
       <p>test</p>
+      <p>Updated</p>
     </div>
   )
 }
