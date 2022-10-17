@@ -6,19 +6,19 @@ import React from 'react'
 import Layout from '@components/Layout'
 
 
-const HomePage: NextPageWithLayout = () => {
+const MagicPage: NextPageWithLayout = () => {
   return (
     <div>
       <h1 className='text-3xl font-bold underline'>
-        Welcome to <a href='https://nextjs.org'>Next.js!</a>
+       Magic Page
       </h1>
       <p>test</p>
     </div>
   )
 }
 
-HomePage.getLayout = (page: ReactElement) => {
+MagicPage.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>
 }
 
-export default HomePage
+export default MagicPage
