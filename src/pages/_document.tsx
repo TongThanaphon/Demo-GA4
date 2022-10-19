@@ -23,15 +23,19 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-NN0TT0ZDRB'
+          ></script>
           {/* <!-- Google Tag Manager (noscript) --> */}
-          <noscript>
+          {/* <noscript>
             <iframe
               src='https://www.googletagmanager.com/ns.html?id=GTM-5F5GWC6'
               height='0'
               width='0'
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
-          </noscript>
+          </noscript> */}
           {/* <!-- End Google Tag Manager (noscript) --> */}
         </body>
       </Html>
