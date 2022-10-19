@@ -24,14 +24,14 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           {/* <!-- Google Tag Manager (noscript) --> */}
-          <noscript>
+          {/* <noscript>
             <iframe
               src='https://www.googletagmanager.com/ns.html?id=GTM-5F5GWC6'
               height='0'
               width='0'
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
-          </noscript>
+          </noscript> */}
           {/* <!-- End Google Tag Manager (noscript) --> */}
         </body>
       </Html>
