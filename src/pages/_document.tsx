@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -6,7 +7,6 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document'
-
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
@@ -19,7 +19,19 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head />
+        <Head>
+          {/* <!-- Google tag (gtag.js) --> */}
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-NN0TT0ZDRB'
+          ></script>
+          <script>
+            {` window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NN0TT0ZDRB');`}
+          </script>
+        </Head>
         <body>
           <Main />
           <NextScript />
