@@ -7,6 +7,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document'
+import Script from 'next/script'
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
@@ -21,16 +22,17 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           {/* <!-- Google tag (gtag.js) --> */}
-          <script
+          <Script
+            id='gtm'
             async
             src='https://www.googletagmanager.com/gtag/js?id=G-NN0TT0ZDRB'
-          ></script>
-          <script>
-            {` window.dataLayer = window.dataLayer || [];
+          ></Script>
+          <Script id='gtm-script'>
+            {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-NN0TT0ZDRB');`}
-          </script>
+          </Script>
         </Head>
         <body>
           <Main />
